@@ -1,7 +1,9 @@
 [phases.setup]
-nixPkgs = ['php82', 'php82Extensions.pdo_pgsql', 'nodejs_18']
+nixPkgs = ['php82', 'php82Packages.composer', 'nodejs_18', 'npm-9_x']
+aptPkgs = ['libpq-dev']
 
 [phases.install]
+dependsOn = ['setup']
 cmds = [
     'composer install --no-dev --optimize-autoloader',
     'npm install',
@@ -9,6 +11,7 @@ cmds = [
 ]
 
 [phases.build]
+dependsOn = ['install']
 cmds = [
     'php artisan config:cache',
     'php artisan route:cache',
