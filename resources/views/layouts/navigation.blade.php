@@ -15,7 +15,7 @@
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <!-- Home Link -->
-                    <x-nav-link href="http://localhost:8000" :active="request()->url() === 'http://localhost:8000'" class="group">
+                    <x-nav-link href="https://laravel-minicrm-backend-production-daf8.up.railway.app" :active="request()->url() === 'https://laravel-minicrm-backend-production-daf8.up.railway.app'" class="group">
                         <svg class="w-5 h-5 me-2 text-gray-500 group-hover:text-indigo-600 transition-colors duration-150 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
                         </svg>
