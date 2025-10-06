@@ -2,7 +2,7 @@
 
 MiniCRM is a simple, powerful, and intuitive Customer Relationship Management system built with Laravel. It helps small businesses and freelancers manage their clients, projects, and tasks all in one place.
 
-![MiniCRM Logo](public/favicon.ico)
+![LARAVELMINICRM-min](https://github.com/user-attachments/assets/43873f99-f69e-4c74-8b34-dc8fbf356aec)
 
 ## Features
 
