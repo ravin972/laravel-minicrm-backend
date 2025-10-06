@@ -24,13 +24,13 @@ class TaskFactory extends Factory
         $clients = Client::pluck('id');
         $projects = Project::pluck('id');
         return [
-            'title' => fake()->sentence,
-            'description' => fake()->paragraph,
+            'title' => $this->faker->sentence(),
+            'description' => $this->faker->paragraph(),
             'user_id' => $users->random(),
             'client_id' => $clients->random(),
             'project_id' => $projects->random(),
-            'deadline_at' => fake()->dateTimeBetween('+1 month', '+6 month'),
-            'status' => fake()->randomElement(TaskStatus::cases())->value,
+            'deadline_at' => $this->faker->dateTimeBetween('+1 month', '+6 month'),
+            'status' => $this->faker->randomElement(TaskStatus::cases())->value,
         ];
     }
 }

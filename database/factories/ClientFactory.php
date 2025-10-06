@@ -17,14 +17,14 @@ class ClientFactory extends Factory
     public function definition(): array
     {
         return [
-        'contact_name' => fake()->name(),
-        'contact_email' => fake()->unique()->safeEmail(),
-        'contact_phone_number' => fake()->phoneNumber(),
-        'company_name' => fake()->company(),
-        'company_address' => fake()->address(),
-        'company_city' => fake()->city(),
-        'company_zip' => fake()->postcode(),
-        'company_gst' => fake()->unique()->numerify(),
+        'contact_name' => $this->faker->name(),
+        'contact_email' => $this->faker->unique()->safeEmail(),
+        'contact_phone_number' => $this->faker->phoneNumber(),
+        'company_name' => $this->faker->company(),
+        'company_address' => $this->faker->address(),
+        'company_city' => $this->faker->city(),
+        'company_zip' => $this->faker->postcode(),
+        'company_gst' => $this->faker->unique()->numerify('##########'),
         ];
     }
 }

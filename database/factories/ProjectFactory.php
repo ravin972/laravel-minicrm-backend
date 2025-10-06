@@ -23,12 +23,12 @@ class ProjectFactory extends Factory
         $clients = Client::pluck('id');
 
         return [
-            'title' => fake()->sentence(),
-            'description' => fake()->paragraph(),
+            'title' => $this->faker->sentence(),
+            'description' => $this->faker->paragraph(),
             'user_id' => $users->random(),
             'client_id' => $clients->random(),
             'deadline_at' => now()->addDays(rand(1, 30))->toDateString(),
-            'status' => fake()->randomElement(ProjectStatus::cases())->value,
+            'status' => $this->faker->randomElement(ProjectStatus::cases())->value,
         ];
     }
 }
